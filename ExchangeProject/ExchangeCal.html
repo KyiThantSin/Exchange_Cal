@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+<title>Currency Converter</title>
+<meta name="title" content="Currency Converter">
+<meta name="description" content="My first Currency Converter.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://Waikiki.com/">
+<meta property="og:title" content="Currency Converter">
+<meta property="og:description" content="My first Currency Converter.">
+<meta property="og:image" content="image/logo.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://Waikiki.com/">
+<meta property="twitter:title" content="Currency Converter">
+<meta property="twitter:description" content="My first Currency Converter.">
+<meta property="twitter:image" content="image/logo.png">
+
+    <title>Exchange Currency</title>
+
+    <link rel="stylesheet" href="Exchange.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+    <p id="span"></p>
+    <div class="app">
+        <div class="output">
+            <img src="image/logo.png" class="logo">
+        <h1 id="logo_name">MMEx</h1>
+        </div>
+        <div class="result-container">
+            <p class="result">Result:</p>
+            <p id="output-text" class="result1" onchange="answer()">0.00</p>
+        </div>
+        
+    </div>
+    
+    <form id="calc">
+    <div class="center">
+        <div class="input">
+            <label class="text1">Input</label>
+            <input type="number" class="input_text" id="input" placeholder="Enter Input" autofocus required >
+            </div>
+        
+
+        <div class="from">
+            <label class="text">From</label>
+            <select id="from">
+            <option value="" selected>Select Currency</option>
+            </select>
+        </div>
+
+        <div class="to">
+            <label class="text">To</label>
+            <select id="to" required></select>
+        </div>
+
+        <button class="btn">Calculate</button>
+    </div>
+</form>
+    <!--record-->
+    <p class="history_title">History: </p>
+<div class="history_container">
+    <table class="history">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Result</th>
+            </tr>
+        
+        </thead>
+        <tbody id="history_lists">
+            
+        </tbody>
+    </table>
+</div>
+
+
+
+    <script src="js/data.js"></script>
+    <script src="js/Java.js"></script>
+
+</body>
+</html>
